@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+
+  <script>
+    // Proper error handling before accessing the property
+    if (typeof myVar === 'object' && myVar !== null && myVar.hasOwnProperty('myProperty')) {
+        console.log(myVar.myProperty); 
+    } else {
+        console.log("Variable 'myVar' or its property 'myProperty' is undefined.");
+    }
+  </script>
+</body>
+</html>
